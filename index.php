@@ -24,32 +24,32 @@
             <td>
 				<!-- input type="text" name="use_max_words" value="MaxWords" form="my_form" -->
 				<select name="use_max_words_select">
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-					<option value="11">11</option>
-					<option value="12">12</option>
+					<option value="1" <?php if($use_max_words == '1'){echo("selected");}?> >1</option>
+					<option value="2" <?php if($use_max_words == '2'){echo("selected");}?>>2</option>
+					<option value="3" <?php if($use_max_words == '3'){echo("selected");}?> >3</option>
+					<option value="4" <?php if($use_max_words == '4'){echo("selected");}?> >4</option>
+					<option value="5" <?php if($use_max_words == '5'){echo("selected");}?> >5</option>
+					<option value="6" <?php if($use_max_words == '6'){echo("selected");}?> >6</option>
+					<option value="7" <?php if($use_max_words == '7'){echo("selected");}?> >7</option>
+					<option value="8" <?php if($use_max_words == '8'){echo("selected");}?> >8</option>
+					<option value="9" <?php if($use_max_words == '9'){echo("selected");}?> >9</option>
+					<option value="10" <?php if($use_max_words == '10'){echo("selected");}?> >10</option>
+					<option value="11" <?php if($use_max_words == '11'){echo("selected");}?> >11</option>
+					<option value="12" <?php if($use_max_words == '12'){echo("selected");}?> >12</option>
 				</select>
 			</td>
 			<br>
 	<tr>
         <td>
 			<label for="use_spl_chards">Use special charatcers</label>
-			<td><input type="checkbox" name="use_spl_chards" value="splChars"></td>
+			<td><input type="checkbox" name="use_spl_chards" value="splChars" <?php if($use_spl_chars == 1){echo("checked");}?> ></td>
 			<br>
 	    </td>
     </tr>
 	<tr>
         <td>
 			<label for="use_number">Use Numbers</label>
-			<td><input type="checkbox" name="use_number" value="useNumber"></td>
+			<td><input type="checkbox" name="use_number" value="useNumber" <?php if($use_number == 1){echo("checked");}?> ></td>
 			<br>
 	    </td>
     </tr>
